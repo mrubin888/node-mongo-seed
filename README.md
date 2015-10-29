@@ -1,5 +1,5 @@
 # node-mongo-seed
-A node seed project with a mongo client.
+A node seed project with mongo as a database.
 
 ## Setup
 1. Run ```npm install``` from project root
