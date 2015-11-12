@@ -25,7 +25,7 @@ describe('TodoApp', function () {
 			.expect(200, todo_schema);
 	});
 
-	it('gets todolist items by user id', function () {
+	it('get all todolist items', function () {
 		return flare
 			.post(root + "?user_id=" + test_user_id, {
 				text: "Test item"

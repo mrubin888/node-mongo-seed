@@ -14,7 +14,7 @@ var upload	= require('multer')({
 var root = "/api/todo";
 
 router.get(root, function(req, res) {
-	todos.getAllTodosByOwner(req.query.user_id, function (err, result) {
+	todos.getAllTodos(function (err, result) {
 		if (err) {
 			console.log (err);
 			return res.status(500).send(err);

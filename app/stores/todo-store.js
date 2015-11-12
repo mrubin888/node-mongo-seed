@@ -17,8 +17,8 @@ Todos.prototype.createTodo			= function (data, callback) {
 	
 };
 
-Todos.prototype.getAllTodosByOwner	= function (user_id, callback) {
-	Todo.find({owner_id: user_id}, function (err, items) {
+Todos.prototype.getAllTodos	= function (callback) {
+	Todo.find({}, function (err, items) {
 		if (err) {
 			console.log (err);
 			return callback (err);
